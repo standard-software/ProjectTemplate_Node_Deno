@@ -7,8 +7,6 @@ exports["default"] = void 0;
 
 var _lib = _interopRequireDefault(require("./lib1.js"));
 
-var _lib2 = _interopRequireDefault(require("./lib2.js"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -23,13 +21,12 @@ function test() {
 
 function run() {
   console.log(_lib["default"].test1());
-  console.log(_lib2["default"].test2());
   console.log(test());
 }
 
 run();
 
-var _default = _objectSpread(_objectSpread(_objectSpread({}, _lib["default"]), _lib2["default"]), {}, {
+var _default = _objectSpread(_objectSpread({}, _lib["default"]), {}, {
   test: test,
   run: run
 });

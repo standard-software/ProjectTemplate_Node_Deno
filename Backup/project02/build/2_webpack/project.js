@@ -115,8 +115,6 @@ exports["default"] = void 0;
 
 var _lib = _interopRequireDefault(__webpack_require__(2));
 
-var _lib2 = _interopRequireDefault(__webpack_require__(3));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -131,13 +129,12 @@ function test() {
 
 function run() {
   console.log(_lib["default"].test1());
-  console.log(_lib2["default"].test2());
   console.log(test());
 }
 
 run();
 
-var _default = _objectSpread(_objectSpread(_objectSpread({}, _lib["default"]), _lib2["default"]), {}, {
+var _default = _objectSpread(_objectSpread({}, _lib["default"]), {}, {
   test: test,
   run: run
 });
@@ -162,27 +159,6 @@ function test1() {
 
 var _default = {
   test1: test1
-};
-exports["default"] = _default;
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-function test2() {
-  return 'result test2';
-}
-
-var _default = {
-  test2: test2
 };
 exports["default"] = _default;
 

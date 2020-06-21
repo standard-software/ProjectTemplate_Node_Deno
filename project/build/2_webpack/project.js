@@ -113,11 +113,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.test = test;
 exports.run = run;
-exports["default"] = exports.test2 = exports.test1 = void 0;
+exports["default"] = exports.test1 = void 0;
 
 var _lib = _interopRequireDefault(__webpack_require__(2));
-
-var _lib2 = _interopRequireDefault(__webpack_require__(3));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -135,19 +133,16 @@ function test() {
 
 function run() {
   console.log(_lib["default"].test1());
-  console.log(_lib2["default"].test2());
   console.log(test());
 }
 
 run();
-var test1 = _lib["default"].test1;
-exports.test1 = test1;
-var test2 = _lib2["default"].test2; // support
+var test1 = _lib["default"].test1; // support
 //  const { default: project } = require(
 
-exports.test2 = test2;
+exports.test1 = test1;
 
-var _default = _objectSpread(_objectSpread(_objectSpread({}, _lib["default"]), _lib2["default"]), {}, {
+var _default = _objectSpread(_objectSpread({}, _lib["default"]), {}, {
   test: test,
   run: run
 });
@@ -172,27 +167,6 @@ function test1() {
 
 var _default = {
   test1: test1
-};
-exports["default"] = _default;
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-function test2() {
-  return 'result test2';
-}
-
-var _default = {
-  test2: test2
 };
 exports["default"] = _default;
 

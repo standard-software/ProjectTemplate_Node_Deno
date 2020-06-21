@@ -5,7 +5,6 @@
   source
     index.js
     lib1.js
-    lib2.js
 
 ## project01
 

@@ -116,20 +116,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var lib1 = __webpack_require__(2);
 
-var lib2 = __webpack_require__(3);
-
 function test() {
   return 'result test';
 }
 
 function run() {
   console.log(lib1.test1());
-  console.log(lib2.test2());
   console.log(test());
 }
 
 run();
-module.exports = _objectSpread(_objectSpread(_objectSpread({}, lib1), lib2), {}, {
+module.exports = _objectSpread(_objectSpread({}, lib1), {}, {
   test: test,
   run: run
 });
@@ -147,21 +144,6 @@ function test1() {
 
 module.exports = {
   test1: test1
-};
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function test2() {
-  return 'result test2';
-}
-
-module.exports = {
-  test2: test2
 };
 
 /***/ })

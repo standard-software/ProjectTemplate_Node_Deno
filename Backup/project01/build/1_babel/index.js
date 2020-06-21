@@ -8,20 +8,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var lib1 = require('./lib1.js');
 
-var lib2 = require('./lib2.js');
-
 function test() {
   return 'result test';
 }
 
 function run() {
   console.log(lib1.test1());
-  console.log(lib2.test2());
   console.log(test());
 }
 
 run();
-module.exports = _objectSpread(_objectSpread(_objectSpread({}, lib1), lib2), {}, {
+module.exports = _objectSpread(_objectSpread({}, lib1), {}, {
   test: test,
   run: run
 });
