@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "node:source": "node ./source/index.js",
-    "node:test_source": "node ./test/test_source.js",
+    "node:test_source": "node ./test/test_source_1.js && node ./test/test_source_2.js",
     "babel": "babel --config-file ./config/babel.config.js ./source --out-dir ./build/1_babel",
-    "node:test_build_1_babel": "node ./test/test_build_1_babel.js",
+    "node:test_build_1_babel": "node ./test/test_build_1_babel_1.js && node ./test/test_build_1_babel_2.js",
     "webpack": "webpack --config ./config/webpack.config.js",
-    "node:test_build_2_webpack": "node ./test/test_build_2_webpack.js",
+    "node:test_build_2_webpack": "node ./test/test_build_2_webpack_1.js && node ./test/test_build_2_webpack_2.js",
+    "wsh:test_build_2_webpack_wsh": "cscript ./test/test_build_2_webpack_wsh_1.wsf && cscript ./test/test_build_2_webpack_wsh_2.wsf",
     "": ""
   },
   "keywords": [],

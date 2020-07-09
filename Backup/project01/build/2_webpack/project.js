@@ -126,9 +126,14 @@ function run() {
 }
 
 run();
-module.exports = _objectSpread(_objectSpread({}, lib1), {}, {
+
+var project = _objectSpread(_objectSpread({}, lib1), {}, {
   test: test,
   run: run
+});
+
+module.exports = _objectSpread(_objectSpread({}, project), {}, {
+  project: project
 });
 
 /***/ }),

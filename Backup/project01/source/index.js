@@ -10,8 +10,13 @@ function run() {
 }
 run();
 
-module.exports = {
+const project = {
   ...lib1,
   test,
   run,
-};
+}
+
+module.exports = {
+  ...project,
+  project,
+}
