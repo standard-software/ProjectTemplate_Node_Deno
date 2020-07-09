@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+
+  <script>
+
+    var outputMessage = '';
+    var console = {
+      log: function(...values) {
+        values.forEach(value => {
+          outputMessage += value;
+          outputMessage += ' '
+        })
+        outputMessage += '\n<br>\n'
+      }
+    };
+
+  </script>
+  <script src="../build/2_webpack/project.js"></script>
+
+  <script>
+    project = project.project;
+    console.log(project.test(), project.test1());
+
+    outputMessage += '<br>\n<br>\n'
+    outputMessage = outputMessage.split('  ').join('&nbsp;&nbsp;');
+    document.write(outputMessage);
+
+  </script>
+
+</body>
+</html>

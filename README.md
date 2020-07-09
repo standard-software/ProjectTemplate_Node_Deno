@@ -91,3 +91,10 @@
       - test_build_1_babel_1.js const project = require(
       - test_build_1_babel_2.js const { default: project } = require(
       - test_build_1_babel_3.js const { project } = require(
+  - browser
+    - run browser
+      - <script src="../build/2_webpack/project.js"></script>
+  - wsh
+    - run cscript
+      - <script language="JavaScript" src="../build/2_webpack/project.js"></script>
+
