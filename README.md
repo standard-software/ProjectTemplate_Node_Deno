@@ -18,9 +18,17 @@
   - babel
     - run node
       - const project = require(
+      - const { project } = require(
   - webpack
     - run node
       - const project = require(
+      - const { project } = require(
+  - browser
+    - run browser
+      - <script src="../build/2_webpack/project.js"></script>
+  - wsh
+    - run cscript
+      - <script language="JavaScript" src="../build/2_webpack/project.js"></script>
 
 ## project02
 
